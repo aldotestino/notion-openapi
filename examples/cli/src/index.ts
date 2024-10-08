@@ -1,4 +1,4 @@
-import NotionOpenapi, { getOpenapiFromURL } from '@notion-openapi/notion-openapi';
+import { NotionOpenapi, getOpenapiFromURL } from '@notion-openapi/notion-openapi';
 import figlet from 'figlet';
 import chalk from 'chalk';
 import ora from 'ora';

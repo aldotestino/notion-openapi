@@ -1,3 +1,5 @@
+import { MethodName } from '@notion-openapi/notion-openapi';
+
 export const notionHexColorByMethod: Record<MethodName, string> = {
   get: '#9065B0',
   post: '#448361',

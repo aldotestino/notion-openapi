@@ -25,7 +25,7 @@ Features include:
     ```
 6. Write some code
     ```ts
-    import NotionOpenapi, { getOpenapiFromURL } from 'notion-openapi';
+    import { NotionOpenapi, getOpenapiFromURL } from 'notion-openapi';
 
     async function main() {
       try {

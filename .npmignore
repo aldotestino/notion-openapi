@@ -8,3 +8,7 @@ tsconfig.json
 tsup.config.ts
 test.ts
 release.config.mjs 
+examples
+release.config.cjs
+.github
+eslint.config.mjs
