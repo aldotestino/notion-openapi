@@ -1,11 +1,5 @@
 import { AxiosRequestConfig } from 'axios';
 
-export type NotionColor = 'default' | 'gray' | 'brown' | 'orange' | 'yellow' | 'green' | 'blue' | 'purple' | 'pink' | 'red';
-
-export type MethodName = 'get' | 'post' | 'put' | 'delete' | 'patch' | 'options' | 'head';
-
-export type ParameterIn = 'query' | 'path' | 'header' | 'cookie';
-
 export type JSONSchema = {
   type: string;
   enum?: string[];
@@ -61,7 +55,13 @@ export type OAPath = Record<MethodName, OAMethod>
 
 export type OAPaths = Record<string, OAPath>;
 
-/* Endpoint TYPES */
+/* Exported TYPES */
+export type NotionColor = 'default' | 'gray' | 'brown' | 'orange' | 'yellow' | 'green' | 'blue' | 'purple' | 'pink' | 'red';
+
+export type MethodName = 'get' | 'post' | 'put' | 'delete' | 'patch' | 'options' | 'head';
+
+export type ParameterIn = 'query' | 'path' | 'header' | 'cookie';
+
 export type Parameter = {
   name: string;
   description?: string;
