@@ -8,9 +8,12 @@
   "repository": {
     "url": "https://github.com/aldotestino/notion-openapi"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "dev": "tsx --watch ./src/test.ts",
-    "build": "tsup"
+    "build": "tsup",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "notion",
@@ -28,6 +31,7 @@
     "@types/node": "^22.7.5",
     "eslint": "^9.12.0",
     "globals": "^15.10.0",
+    "semantic-release": "^24.1.2",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",

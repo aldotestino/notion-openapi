@@ -16,7 +16,3 @@ export async function getOpenapiFromURL<T>(url: string, options?: GetOpenapiFrom
     throw err;
   }
 }
-
-export async function getOpenapiFromFile(filePath: string) {
-  console.log(filePath);
-}
