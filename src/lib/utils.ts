@@ -7,9 +7,9 @@ function parseParameters(parameters: OAParameter[]): Parameter[] {
     name: p.name,
     description: p.description,
     in: p.in,
-    type: p.schema.enum ? p.schema.enum.join(' | ') : p.schema.type,
+    type: p.schema?.enum ? p.schema.enum.join(' | ') : p.schema?.type,
     required: p.required,
-    default: p.schema.default,
+    default: p.schema?.default,
   }));
 }
 

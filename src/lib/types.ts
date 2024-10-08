@@ -1,3 +1,5 @@
+import { AxiosRequestConfig } from 'axios';
+
 export type NotionColor = 'default' | 'gray' | 'brown' | 'orange' | 'yellow' | 'green' | 'blue' | 'purple' | 'pink' | 'red';
 
 export type MethodName = 'get' | 'post' | 'put' | 'delete' | 'patch' | 'options' | 'head';
@@ -91,5 +93,7 @@ export type Openapi = {
   tags?: string[];
   endpoints: Endpoint[];
 }
+
+export type GetOpenapiFromURLOptions<T> = AxiosRequestConfig<T>
 
 export type NotionOpenapiErrorType = 'FileError' | 'FetchError' | 'ParseError' | 'DBCreationError' | 'DBInsertionError';

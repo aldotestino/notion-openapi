@@ -9,7 +9,7 @@
     "url": "https://github.com/aldotestino/notion-openapi"
   },
   "scripts": {
-    "dev": "tsx --watch ./src/index.ts",
+    "dev": "tsx --watch ./src/test.ts",
     "build": "tsup"
   },
   "keywords": [

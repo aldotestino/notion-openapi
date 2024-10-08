@@ -1,9 +1,9 @@
-import axios, { AxiosRequestConfig, isAxiosError } from 'axios';
-import { Openapi } from './lib/types';
+import axios, { isAxiosError } from 'axios';
+import { GetOpenapiFromURLOptions, Openapi } from './lib/types';
 import { parseJsonOpenapi } from './lib/utils';
 import { NotionOpenapiError } from './lib/errors';
 
-export async function getJsonOpenapiFromURL(url: string, options?: AxiosRequestConfig<any> | undefined): Promise<Openapi> {
+export async function getOpenapiFromURL<T>(url: string, options?: GetOpenapiFromURLOptions<T>): Promise<Openapi> {
   try {
     const res = await axios.get(url, options);
     if (!res.headers['content-type']?.includes('application/json'))
@@ -17,6 +17,6 @@ export async function getJsonOpenapiFromURL(url: string, options?: AxiosRequestC
   }
 }
 
-export async function getJsonOpenapiFromFile(filePath: string) {
+export async function getOpenapiFromFile(filePath: string) {
   console.log(filePath);
 }

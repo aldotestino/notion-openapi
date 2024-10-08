@@ -6,3 +6,4 @@ src
 .idea
 tsconfig.json
 tsup.config.ts
+test.ts
