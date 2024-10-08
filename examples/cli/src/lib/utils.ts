@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { ZodError } from 'zod';
-import { notionHexColorByMethod } from './data';
+import { notionHexColorByMethod } from '@/lib/data';
 import { MethodName } from '@notion-openapi/notion-openapi';
 
 export function formatZodError(error: ZodError): string {

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { NotionOpenapi, getOpenapiFromURL } from '@notion-openapi/notion-openapi';
 import figlet from 'figlet';
 import chalk from 'chalk';
@@ -5,7 +7,7 @@ import ora from 'ora';
 import inquirer from 'inquirer';
 import { program } from 'commander';
 import { optionsSchema } from '@/lib/schema';
-import { formatEndpointSelection, formatZodError } from './lib/utils';
+import { formatEndpointSelection, formatZodError } from '@/lib/utils';
 
 program
   .version('0.0.1')
