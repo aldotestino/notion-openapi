@@ -1,6 +1,6 @@
 {
-  "name": "notion-openapi",
-  "version": "1.0.1",
+  "name": "@notion-openapi/notion-openapi",
+  "version": "1.0.0",
   "description": "Create a Notion database from your OpenAPI document. Automatically map API endpoints, methods, and parameters into a structured Notion DB.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
